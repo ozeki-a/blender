@@ -1,0 +1,19 @@
+.btn {
+display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1em 2em;
+  width: fit-content;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border: 3px solid #a0c4d3;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid $black;
+  color: $black;
+  transition: 0.3s;
+  margin: 0 10px 10px 0;
+  line-height: 1.22;
+  border-radius: 2px;
+}

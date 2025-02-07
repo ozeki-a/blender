@@ -1,0 +1,71 @@
+.mt {
+  @each $key, $item in $margins {
+    &#{$key} {
+      display: block;
+      margin-top: $item !important;
+      @include mq(sp) {
+        margin-top: #{$item/2} !important;
+      }
+    }
+  }
+}
+.sp-mt {
+  @each $key, $item in $margins {
+    &#{$key} {
+      @include mq(sp) {
+        margin-top: #{$item} !important;
+      }
+    }
+  }
+}
+
+.pt {
+  @each $key, $item in $margins {
+    &#{$key} {
+      display: block;
+      padding-top: $item !important;
+      @include mq(sp) {
+        padding-top: #{$item/2} !important;
+      }
+    }
+  }
+}
+.sp-pt {
+  @each $key, $item in $margins {
+    &#{$key} {
+      @include mq(sp) {
+        padding-top: #{$item} !important;
+      }
+    }
+  }
+}
+.pb {
+  @each $key, $item in $margins {
+    &#{$key} {
+      display: block;
+      padding-bottom: $item !important;
+      @include mq(sp) {
+        padding-bottom: #{$item/2} !important;
+      }
+    }
+  }
+}
+.sp-pb {
+  @each $key, $item in $margins {
+    &#{$key} {
+      @include mq(sp) {
+        padding-bottom: #{$item} !important;
+      }
+    }
+  }
+}
+.p{
+  @each $key, $item in $margins {
+    &#{$key} {
+      padding: $item !important;
+      @include mq(sp) {
+        padding: #{$item/2} !important;
+      }
+    }
+  }
+}

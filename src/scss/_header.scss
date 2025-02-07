@@ -1,0 +1,35 @@
+.header {
+  height: 100px;
+  display: flex;
+  &Inner{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    @include mq(sp){
+      padding: 0 $sp-margin;
+    }
+  }
+  &_image{
+    width: 45px;
+  }
+  &_menu{
+    &Wrap{
+      display: flex;
+      width: 80%;
+    }
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2.0rem;
+    &:not(:last-child){
+      margin-right: 10px;
+    }
+  }
+  &_credit {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 0.05em;
+    width: 100%;
+    margin-left: 10px;
+  }
+}

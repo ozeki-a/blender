@@ -1,0 +1,101 @@
+$breakpoints: (
+  'sp': 'screen and (max-width: 749px)',
+  'pc': 'screen and (min-width: 750px)'
+)
+!default;
+@mixin mq($breakpoint: pc) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+.sp {
+  @include mq() {
+    display: none !important;
+  }
+}
+
+.pc {
+  @include mq(sp) {
+    display: none !important;
+  }
+}
+
+$black:#2c2c2c;
+$white : #FFF;
+$silver:#EFEFEF;
+$green:#124100;
+$glass:#97C97D;
+$fb:#3864a3;
+$tw:#48b5f0;
+
+$color: (
+  "white": $white,
+  "black": $black,
+  "silver":$silver,
+  "green":$green,
+  "glass":$glass
+);
+
+$margins: (
+  "0": 0px,
+  "5": 5px,
+  "10": 10px,
+  "15": 15px,
+  "20": 20px,
+  "25": 25px,
+  "30": 30px,
+  "40": 40px,
+  "50": 50px,
+  "60": 60px,
+  "70": 70px,
+  "80": 80px,
+  "90": 90px,
+  "100": 100px,
+  "110": 110px,
+  "120": 120px,
+  "130": 130px,
+  "140": 140px,
+  "150": 150px,
+  "160": 160px,
+  "200":200px
+
+);
+
+$widths: (
+  "100": 100px,
+  "500": 500px,
+  "600": 600px,
+  "700": 700px,
+  "800": 800px,
+  "900": 900px,
+  "990": 990px,
+  "1000": 1000px,
+  "1100": 1100px,
+  "1200": 1200px,
+  "1300": 1300px,
+  "1400": 1400px
+);
+
+$menu-color: $black;
+$font : 'Noto Sans JP', sans-serif;
+$roboto:'Roboto', sans-serif;
+$page-width: 1400px;
+$sp-margin: 25px;
+
+.font {
+  font-family: $font;
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: $black;
+  @include mq(sp){
+    font-size: 1.2rem;
+  }
+}
+
+.central{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

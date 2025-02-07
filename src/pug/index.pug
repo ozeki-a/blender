@@ -1,0 +1,39 @@
+include config/_01_data.pug
+doctype html
+html(lang="ja")
+  head
+    include config/_02_tdk.pug
+    include config/_03_styles.pug
+  body
+    include config/_04_bodystart.pug
+
+    .container(style="opacity:0;")
+      include _header.pug
+      .wrap800
+        p.
+          右ドラッグ：オブジェクトの回転　
+          左ドラッグ：オブジェクトの位置調整　
+          スクロール：ズーム⇄ズームアウト
+        #main_canvas
+          canvas#canvas
+
+        h2.mt30 Select model
+        .cp_ipselect.cp_sl02
+          select
+
+        .mt20
+          btn.btn(style="display:none;") アニメーション
+
+        h2.mt100 Track Changes
+        .mt20
+          p 2022.10.20 庭、動くモンスターを追加　
+          p 2022.10.19 動く宝箱（カメラ移動あり）、動く宝箱（カメラ移動なし）を追加
+          p 2022.10.17 Among us、モンスター、樽を描画
+
+        h2.mt100 Bug List
+        .mt20
+          p ・スマホで「動く宝箱（カメラ移動あり）」のアス比が崩れる
+          p ・宝箱が空いた時に接合部がずれる
+
+      include _footer.pug
+    include config/_05_scripts.pug

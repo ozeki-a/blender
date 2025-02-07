@@ -1,0 +1,8 @@
+#canvas{
+  width: 700px;
+  height: 500px;
+  border: 1px solid gray;
+  @include mq(sp) {
+    width: 100%;
+  }
+}

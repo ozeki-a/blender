@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>Blender Park</title>
+  <meta name="description" content="Blender Park">
+  <link rel="canonical" href="https://grand-ew.jp/blender/">
+  <meta property="og:site_name" content="GEW">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:title" content="Blender Park">
+  <meta property="og:url" content="https://grand-ew.jp/blender/">
+  <meta property="og:image" content="https://grand-ew.jp/blender/assets/img/ogp.png">
+  <meta property="og:type" content="article">
+  <meta property="og:description" content="Blender Park">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@mo_ro_zo_">
+  <meta property="twitter:title" content="Blender Park">
+  <meta property="twitter:description" content="Blender Park">
+  <meta name="twitter:image" content="https://grand-ew.jp/blender/assets/img/ogp.png">
+  <meta name="twitter:url" content="https://grand-ew.jp/blender/?ref=twnews">
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-101778486-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/blender/assets/css/style.css?v3">
+</head>
+
+<body>
+  <div class="loading"></div>
+  <div class="container" style="opacity:0;">
+    <header class="header" id="header">
+      <div class="headerInner">
+        <p class="header_image"><img class="w100" src="assets/img/icon.png"></p>
+        <p class="header_credit">Blender Park</p>
+      </div>
+    </header>
+    <div class="wrap800">
+      <p>
+        右ドラッグ：オブジェクトの回転　
+        左ドラッグ：オブジェクトの位置調整　
+        スクロール：ズーム⇄ズームアウト
+      </p>
+      <div id="main_canvas">
+        <canvas id="canvas"></canvas>
+      </div>
+      <h2 class="mt30">Select model</h2>
+      <div class="cp_ipselect cp_sl02">
+        <select></select>
+      </div>
+      <div class="mt20">
+        <btn class="btn" style="display:none;">アニメーション</btn>
+      </div>
+      <h2 class="mt100">Track Changes</h2>
+      <div class="mt20">
+        <p>2022.10.20 庭、動くモンスターを追加　</p>
+        <p>2022.10.19 動く宝箱（カメラ移動あり）、動く宝箱（カメラ移動なし）を追加</p>
+        <p>2022.10.17 Among us、モンスター、樽を描画</p>
+      </div>
+      <h2 class="mt100">Bug List</h2>
+      <div class="mt20">
+        <p>・スマホで「動く宝箱（カメラ移動あり）」のアス比が崩れる</p>
+        <p>・宝箱が空いた時に接合部がずれる</p>
+      </div>
+    </div>
+    <div class="wrap800 mt50"></div>
+    <div class="footer">
+      <p class="center"><small>Blender Park</small></p>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/blender/assets/js/three.min.js"></script>
+  <script type="text/javascript" src="/blender/assets/js/OrbitControls.js"></script>
+  <script type="text/javascript" src="/blender/assets/js/GLTFLoader.js"></script>
+  <script type="text/javascript" src="/blender/assets/js/script.js?v1"></script>
+</body>
+
+</html>

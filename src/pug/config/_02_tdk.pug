@@ -1,0 +1,22 @@
+meta(charset="UTF-8")
+meta(name="viewport" content="width=device-width")
+meta(http-equiv="X-UA-Compatible" content="ie=edge")
+meta(name="format-detection" content="telephone=no")
+title #{TITLE}
+
+meta(name="description" content=DESC)
+link(rel="canonical" href=`${json.config.domain}${json.config.path}`)
+meta(property="og:site_name" content="GEW")
+meta(property="og:locale" content="ja_JP")
+meta(property="og:title" content=TITLE)
+meta(property="og:url" content=`${json.config.domain}${json.config.path}`)
+meta(property="og:image" content=`${json.config.domain}${json.config.path}${OGP == "" ? "assets/img/ogp.png" : OGP}`)
+meta(property="og:type" content="article")
+meta(property="og:description" content=DESC)
+
+meta(name="twitter:card" content="summary_large_image")
+meta( name="twitter:site" content="@mo_ro_zo_")
+meta(property="twitter:title" content=TITLE)
+meta(property="twitter:description" content=DESC)
+meta(name="twitter:image" content=`${json.config.domain}${json.config.path}${OGP == "" ? "assets/img/ogp.png" : OGP}`)
+meta(name="twitter:url" content=`${json.config.domain}${json.config.path}?ref=twnews`)
